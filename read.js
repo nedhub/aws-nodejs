@@ -6,6 +6,7 @@ let awsConfig = {
 };
 AWS.config.update(awsConfig);
 
+
 let docClient = new AWS.DynamoDB.DocumentClient();
 let fetchOneByKey = function () {
     var params = {
